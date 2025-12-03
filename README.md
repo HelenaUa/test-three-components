@@ -23,7 +23,7 @@ npx storybook init
 1. 📥 Input Component  
 A smart, flexible input field with extended behavior.    
   
-Features:  
+  Features:  
 - type="password" → shows eye icon to toggle visibility
 - clearable={true} → displays an "X" button to clear input  
 - Supports text, password, number, and other types  
@@ -32,7 +32,7 @@ Features:
 2. 🔔 Toast Component  
 A popup notification appearing at the top-right corner.  
   
-Features:  
+  Features:  
 - Auto-close after a specified duration  
 - Smooth fade & slide transition  
 - Types: success, error, warning, info  
@@ -40,7 +40,7 @@ Features:
 3. 📚 Sidebar Menu Component  
 A collapsible side navigation menu with nested items.  
   
-Features:  
+  Features:  
 - Opens from the right with animation  
 - Supports nested submenus (accordion style)  
 - Closes on clicking overlay  
