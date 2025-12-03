@@ -1,16 +1,25 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Input Component  
+  
+![Input component](src/assets/screenshots/Input_text.png)
+![Input component](src/assets/screenshots/Input_password-1.png)  
+![Input component](src/assets/screenshots/Input_password-2.png)  
+![Input component](src/assets/screenshots/Input_password-3.png)  
+![Input component](src/assets/screenshots/Input_clearable.png)  
+![Input component](src/assets/screenshots/Input_number.png)  
+  
+## Toast Component
 
-## React Compiler
+![Toast component](src/assets/screenshots/Toast_success.png)  
+![Toast component](src/assets/screenshots/Toast_error.png)  
+![Toast component](src/assets/screenshots/Toast_info.png)  
+![Toast component](src/assets/screenshots/Toast_warning.png)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## SidebarMenu Component
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![SidebarMenu component](src/assets/screenshots/SidebarMenu_closed.png)  
+![SidebarMenu component](src/assets/screenshots/SidebarMenu_open.png)
+![SidebarMenu component](src/assets/screenshots/SidebarMenu_nested.png)
