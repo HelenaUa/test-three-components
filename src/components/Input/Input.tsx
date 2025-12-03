@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Wrapper, StyledInput, IconButton } from "./Input.styled";
 
 interface InputProps {
   type?: "text" | "password" | "number";
@@ -32,54 +33,28 @@ export const Input = ({
   const inputType = isPassword && showPassword ? "text" : type;
 
   return (
-    <div style={{ position: "relative", width: "250px" }}>
-      <input
+    <Wrapper>
+      <StyledInput
         type={inputType}
         value={currentValue}
         placeholder={placeholder}
-        onChange={handleChange}
-        style={{
-          width: "100%",
-          padding: "8px 0 8px 10px",
-          fontSize: "14px",
-          border: "1px solid #ccc",
-          borderRadius: "6px",
-        }}
+        onChange={handleChange}  
       />
 
-      {/* Очко-іконка */}
+      {/* Eye button */}
       {isPassword && (
-        <span
-          onClick={() => setShowPassword((prev) => !prev)}
-          style={{
-            position: "absolute",
-            right: clearable ? 28 : 10,
-            top: "50%",
-            transform: "translateY(-50%)",
-            fontSize: "14px",
-            cursor: "pointer",
-          }}
-        >
+        <IconButton onClick={() => setShowPassword((prev) => !prev)}>
           {showPassword ? "🙈" : "👁️"}
-        </span>
+        </IconButton>
       )}
 
       {/* Clear button */}
       {clearable && currentValue && (
-        <span
-          onClick={clearInput}
-          style={{
-            position: "absolute",
-            right: 8,
-            top: "50%",
-            transform: "translateY(-50%)",
-            cursor: "pointer",
-            color: "#888",
-          }}
-        >
+        <IconButton onClick={clearInput}>
           ✖
-        </span>
+        </IconButton>
       )}
-    </div>
+    </Wrapper>
   );
 };
+
